@@ -9,12 +9,12 @@ body{
 
 header {
     background-color: #444;
-    color: white;
+    color: rgb(15, 10, 10);
 }
 
 .cabecalho {
     background-color: #444;
-    color: white;
+    color: rgb(212, 223, 71);
     display: flex;
     justify-content: space-around;
     align-items: center;
