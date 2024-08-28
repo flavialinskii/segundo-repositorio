@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
           href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap" rel="stylesheet">
-
-          <link rel="stylesheet" href="style.css">
-          <link rel="stylesheet" href="style.apresentação.css"
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.apresentação.css"
 </head>
 
 <body>
@@ -84,6 +85,31 @@
 
 
     </section>
+    <section class="carrossel">
+     <h2 class="carrossel__titulo">meus couverts</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+     <div class="swiper-slide"><img src="./img/casamento.jpg" alt="casamento"></div>
+     <div class="swiper-slide"><img src="./img/bar.png" alt="bar"></div>
+    <div class="swiper-slide"><img src="./img/pista.jpg" alt="pista de boliche "></div>
+    <div class="swiper-slide"><img src="./img/couvertaniversario.jpg" alt="aniversário"</div>
+    <div class="swiper-slide"><img src="./img/couvertluau.jpg" alt="luau"</div>
+    <div class="swiper-slide"><img src="./img/couvertcafeteria.jpg" alt="cafeteria"</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+    </div>
+    </section>
 
     <section class="estudante">
         <h2 class="estudante-titulo">Quem sou</h2>
@@ -95,12 +121,11 @@
             <a href="https://wa.me/5541998076634"> <img src="img/icons8-whatsapp-90.png" alt="icone do whatsapp" class="estudante-icone"></a>
         </div>
     </section>
-
-
-
     <footer class="rodape">
         <img src="img/alurastart_logo (1).png" alt="logo da alura" class="rodape-imagem">
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+
 
 </body>
 
