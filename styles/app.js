@@ -8,17 +8,28 @@ function criaCartao(item, pergunta, resposta) {
 
     cartao.className = 'cartao';
 
-    cartao.innerHTML = 
-    <div class="cartao__conteudo">
-    <h3>Missão</h3>
-    
-    <div class="cartao__conteudo__pergunta">
-        <p>Saiba qual é a missão de nossa empresa!</p>
-    </div>
-    
-    <div class="cartao__conteudo__resposta">
-        <p>Nossa missão é...</p>
-    </div>
-</div>
-    flashcard.appendChild(cartao)
+    cartao.innerHTML = `
+        <div class="cartao__conteudo">
+            <h3>${item}</h3>
+            
+            <div class="cartao__conteudo__pergunta">
+                <p>${pergunta}</p>
+            </div>
+            
+            <div class="cartao__conteudo__resposta">
+                <p>${resposta} </p>
+            </div>
+        </div>
+
+        `
+        let respostaEstaVisivel = false 
+
+        fuction viraCartao (){
+            respostaEstaVisivel = !variavelEstaVisivel;
+            cartao.classList.toggle('active', viraCartao);
+        }
+
+        cartao.addEventListener('click', viraCartao);
+
+    flashcard.appendChield(cartao);
 }
